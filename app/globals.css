@@ -23,23 +23,23 @@ body {
 }
 
 footer {
-  background-color: rgb(139,30,66);
+  background-color: #bf1944;
 }
 
 .social-icon:hover {
-  color: #d5d5d5;
+  color: #ecbac7;
 }
 
-header p {
+header p, .headerTitle p {
   color: #696969;
 }
 
-header .headerTitle {
+.headerTitle {
   z-index: 1;
 }
 
-header .headerTitle h1 {
-  color: rgb(179,39,66);
+.headerTitle h1, .headerTitle h2 {
+  color: #bf1944;
   /* font-size: 3rem;
   font-weight: 700; */
   /* margin: 10px 0; */
@@ -48,15 +48,21 @@ header .headerTitle h1 {
   /* width: 80%; */
 }
 
-header .headerTitle h1::after {
+.headerTitle h1::after, .headerTitle h2::after {
   content: "";
   position: absolute;
-  background-color: #ffe9e9;
-  -webkit-box-shadow: 0 0 8px #ffd6d6;
-          box-shadow: 0 0 8px #ffd6d6;
+  /* background-color: #ffe9e9; */
+  background-color: #f2d1da;
+  /* -webkit-box-shadow: 0 0 8px #ffd6d6; */
+          /* box-shadow: 0 0 8px #ffd6d6; */
+          box-shadow: 0 0 8px #eec3cf;
   height: 15px;
   left: 8px;
   bottom: 0;
   width: 100%;
   z-index: -1;
+}
+
+.contact-section {
+  background-color: #f9e8ec;
 }
