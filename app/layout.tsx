@@ -1,25 +1,15 @@
 import FooterBar from "./footer";
 import LandingSection from "./landing";
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
 import { Karla } from "next/font/google";
 import "./globals.css";
 import Contact from "./contact";
+import Aboutme from "./aboutme";
 
 const karlaSans = Karla({
   variable: "--font-karla-sans",
   subsets: ["latin"],
 });
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -37,6 +27,7 @@ export default function RootLayout({
         className={`${karlaSans.variable} antialiased`}
       >
         <LandingSection />
+        <Aboutme />
         {children}
         <Contact />
         <FooterBar />

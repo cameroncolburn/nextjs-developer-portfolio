@@ -20,7 +20,7 @@ export default function LandingSection() {
             </div>
             <div className="h-1/6">
                 <Image
-                    src="/down-arrow-icon2.svg"
+                    src="/down-arrow.svg"
                     alt="down arrow icon"
                     width={25}
                     height={25}

@@ -1,10 +1,10 @@
 export default function Contact() {
     return (
         <section className="contact-section pt-12 pb-12 font-[family-name:var(--font-karla-sans)]">
-            <div className="flex justify-between items-center mx-auto max-w-7xl">
-                <div className="headerTitle">
+            <div className="flex justify-between items-start max-w-5xl mx-auto">
+                <div className="headerTitle p-6">
                     <h2 className="text-2xl font-bold">Contact Me</h2>
-                    <p className="font-semibold">Do you have an opportunity you want to discuss, or perhaps just want to chat? Drop me a line.</p>
+                    <p className="font-semibold mt-4">Do you have an opportunity you want to discuss, or perhaps just want to chat? Drop me a line.</p>
                 </div>
 
                 <div>

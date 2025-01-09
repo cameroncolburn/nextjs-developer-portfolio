@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function FooterBar() {
     return (
         <footer className="footer font-[family-name:var(--font-karla-sans)] font-semibold">
-        <div className="container flex flex-col items-center py-4 sm:py-8 mx-auto px-7 max-w-7xl sm:flex-row">
+        <div className="container flex flex-col items-center py-4 sm:py-8 mx-auto px-7 max-w-5xl sm:flex-row">
             <a className="h-5 text-base group relative z-30 flex justify-center items-center space-x-1.5">
                 <span className="text-xl -translate-y-0.5 group-hover:-rotate-12 group-hover:scale-[1.2] ease-in-out duration-300">
                     <Image
