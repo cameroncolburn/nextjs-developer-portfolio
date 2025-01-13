@@ -1,15 +1,16 @@
-import FooterBar from "./footer";
-import LandingSection from "./landing";
+import FooterBar from "./components/footer";
+import LandingSection from "./components/landing";
 import type { Metadata } from "next";
 import { Karla } from "next/font/google";
 import "./globals.css";
-import Contact from "./contact";
-import Aboutme from "./aboutme";
+import Contact from "./components/contact";
+import Aboutme from "./components/aboutme";
+import Technologies from "./components/technologies";
 
-const karlaSans = Karla({
-  variable: "--font-karla-sans",
-  subsets: ["latin"],
-});
+// const karlaSans = Karla({
+//   variable: "--font-karla-sans",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,10 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${karlaSans.variable} antialiased`}
+        // className={`${karlaSans.variable} antialiased`}
       >
         <LandingSection />
         <Aboutme />
+        <Technologies />
         {children}
         <Contact />
         <FooterBar />

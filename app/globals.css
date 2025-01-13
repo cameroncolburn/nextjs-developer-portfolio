@@ -1,17 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  /* --background: #ffffff; */
   --background: #f3f3f3;
-  /* --foreground: #171717; */
   --primary: #bf1944;
   --secondary: #19bf94;
   --secondary-hover: #39d5ac;
   --text-body: #696969;
-  --header-background: #f2d1da;
-  --header-background-shadow: #eec3cf;
+  /* --header-background: #fecdd3; */
+  --header-background: #4c0519;
+  --header-background-shadow: #fda4af;
   --contact-background: #f9e8ec;
   --social-hover-highlight: #ecbac7;
 }
@@ -31,29 +32,30 @@ body {
   font-family: sans-serif;
 }
 
-footer {
-  background-color: var(--primary);
-}
-
-.social-icon:hover {
-  color: var(--social-hover-highlight);
-}
-
-header p, .headerTitle p {
+/* header p, .headerTitle p {
   color: var(--text-body);
 }
 
 .headerTitle {
   z-index: 1;
-}
+} */
 
-.headerTitle h1, .headerTitle h2 {
+/* .headingBackground::after {
+  content: "";
+  position: absolute;
+  background-color: var(--header-background);
+  -webkit-box-shadow: 0 0 8px var(--header-background-shadow);
+          box-shadow: 0 0 8px var(--header-background-shadow);
+  height: 15px;
+  left: 8px;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+} */
+
+/* .headerTitle h1, .headerTitle h2 {
   color: var(--primary);
-  /* font-size: 3rem;
-  font-weight: 700; */
-  /* margin: 10px 0; */
   position: relative;
-  /* max-width: 200px; */
   width: fit-content;
 }
 
@@ -68,26 +70,19 @@ header p, .headerTitle p {
   bottom: 0;
   width: 100%;
   z-index: -1;
-}
+} */
 
-.contact-section {
-  background-color: var(--contact-background);
-}
-
-.contact-section input, .contact-section textarea {
+/* .contact-section input, .contact-section textarea {
   border: 2px solid var(--header-background-shadow);
-}
+} */
 
-.contact-section button {
+/* .contact-section button {
   background-color: var(--secondary);
-}
+} */
 
-.contact-section button:hover {
+/* .contact-section button:hover {
   background-color: var(--secondary-hover);
-}
-
-#authorImg {
-  background: linear-gradient(45deg, var(--primary), var(--secondary) border-box);
-  border-radius: 5%;
-  border: 5px solid transparent;
-}
+} */
+ #tech-container svg {
+  max-width: 75px;
+ }
